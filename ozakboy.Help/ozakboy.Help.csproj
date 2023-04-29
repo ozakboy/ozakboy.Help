@@ -16,6 +16,7 @@
     <NeutralLanguage>zh-TW</NeutralLanguage>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <DocumentationFile>file.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
