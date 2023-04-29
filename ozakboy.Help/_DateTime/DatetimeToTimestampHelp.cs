@@ -19,5 +19,16 @@ namespace ozakboy.Help
             long unixTimestampInMilliseconds = (long)(utcDateTime - unixEpoch).TotalMilliseconds;
             return unixTimestampInMilliseconds;
         }
+
+        /// <summary>
+        /// 將Unix時間戳轉換為UTC DateTime
+        /// </summary>
+        /// <param name="unixTimestamp">要轉換的Unix時間戳</param>
+        /// <returns>對應的UTC DateTime</returns>
+        public static DateTime FromUnixTimestamp(long unixTimestamp)
+        {
+            DateTime unixEpoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+            return unixEpoch.AddMilliseconds(unixTimestamp);
+        }
     }
 }
