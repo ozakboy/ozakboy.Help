@@ -13,7 +13,6 @@
     <RepositoryUrl>https://github.com/ozakboy/ozakboy.Help</RepositoryUrl>
     <RepositoryType>github</RepositoryType>
     <PackAsTool>True</PackAsTool>
-    <NeutralLanguage>zh-TW</NeutralLanguage>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <DocumentationFile>file.xml</DocumentationFile>
