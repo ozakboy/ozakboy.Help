@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ozakboy.Help
 {
     public static class DatetimeToTimestampHelp
-    {      
+    {
         /// <summary>
         /// 將UTC DateTime轉換為Unix時間戳
         /// </summary>
