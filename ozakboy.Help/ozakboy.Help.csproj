@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <RootNamespace>ozakboy.Help</RootNamespace>
-    <PackageVersion>1.0.3</PackageVersion>
+    <PackageVersion>1.0.4</PackageVersion>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>ozakboy</Authors>
@@ -14,13 +14,14 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/ozakboy/ozakboy.Help</RepositoryUrl>
     <RepositoryType>github</RepositoryType>
-    <PackAsTool>True</PackAsTool>
+    <PackAsTool>False</PackAsTool>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <DocumentationFile>file.xml</DocumentationFile>
-    <IsPublishable>True</IsPublishable>
-    <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
+    <IsPublishable>False</IsPublishable>
+    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
     <AnalysisLevel>6.0-all</AnalysisLevel>
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
