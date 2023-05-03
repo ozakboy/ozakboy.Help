@@ -18,6 +18,13 @@
             <param name="unixTimestamp">要轉換的Unix時間戳</param>
             <returns>對應的UTC DateTime</returns>
         </member>
+        <member name="M:ozakboy.Help.DatetimeToTimestampHelp.DefulteData(System.DateTime)">
+            <summary>
+            取得預設時間 2000/1/1 
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
         <member name="M:ozakboy.Help.EnumExtensions.GetDescription(System.Enum)">
             <summary>
             從枚舉常數中獲取描述文本
