@@ -30,5 +30,15 @@ namespace ozakboy.Help
             DateTime unixEpoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
             return unixEpoch.AddMilliseconds(unixTimestamp);
         }
+
+        /// <summary>
+        /// 取得預設時間 2000/1/1 
+        /// </summary>
+        /// <param name="date"></param>
+        /// <returns></returns>
+        public static DateTime DefulteData(this DateTime date)
+        {
+            return  new DateTime(2000, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+        }
     }
 }

@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <RootNamespace>ozakboy.Help</RootNamespace>
-    <PackageVersion>1.0.4</PackageVersion>
+    <PackageVersion>1.0.5</PackageVersion>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>ozakboy</Authors>
