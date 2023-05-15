@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ozakboy.Help
+namespace ozakboy.HelpCore
 {
     public static class DatetimeToTimestampHelp
     {

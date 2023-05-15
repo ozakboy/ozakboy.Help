@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 
 
-namespace ozakboy.Help
+namespace ozakboy.HelpCore
 {
     public static  class EnumExtensions
     {
