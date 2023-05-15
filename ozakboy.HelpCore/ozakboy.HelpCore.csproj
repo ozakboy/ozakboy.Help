@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Authors>ozakboy</Authors>
     <RootNamespace>ozakboy.HelpCore</RootNamespace>
@@ -11,13 +10,9 @@
     <PackageProjectUrl>https://github.com/ozakboy/ozakboy.Help</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/ozakboy/ozakboy.Help</RepositoryUrl>
-    <RepositoryType>github</RepositoryType>
-    <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
-    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
-    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <RepositoryType>github</RepositoryType>  
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <DocumentationFile>file.xml</DocumentationFile>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
   
   
