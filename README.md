@@ -17,8 +17,8 @@
 | :--- | :--- |
 | ToUnixTimestamp |  將UTC DateTime轉換為Unix時間戳 |
 | FromUnixTimestamp |   將Unix時間戳轉換為UTC DateTime |
+| DefulteData |  取得預設時間 2000/1/1  |
 | GetDescription |  從枚舉常數中獲取描述文本 |
-| ErrorMessageException |  自訂意錯誤訊息 |
 | ToJsonString |  將物件序列化為JSON字符串   |
 | FromJsonString |  將JSON字符串反序列化為指定的類型 |
 
