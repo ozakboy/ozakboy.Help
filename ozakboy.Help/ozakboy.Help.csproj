@@ -4,7 +4,7 @@
     <TargetFrameworks>net6.0;net7.0;netcoreapp3.1;</TargetFrameworks>
     <Nullable>enable</Nullable>
     <RootNamespace>ozakboy.Help</RootNamespace>
-    <PackageVersion>1.0.7</PackageVersion>
+    <PackageVersion>1.0.8</PackageVersion>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>ozakboy</Authors>
