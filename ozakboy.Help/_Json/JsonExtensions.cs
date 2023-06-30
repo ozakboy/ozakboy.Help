@@ -21,9 +21,8 @@ namespace ozakboy.Help
         /// <param name="json">要反序列化的JSON字符串</param>
         /// <returns>反序列化後的對象</returns>
         public static T FromJsonString<T>(this string json)
-        {
-            var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
-            return JsonSerializer.Deserialize<T>(json, options);
+        {       
+            return JsonSerializer.Deserialize<T>(json);
         }
     }
 }
