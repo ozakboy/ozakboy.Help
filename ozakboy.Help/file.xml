@@ -32,6 +32,74 @@
             <param name="value">要獲取描述文本的枚舉常數</param>
             <returns>枚舉常數的描述文本</returns>
         </member>
+        <member name="T:ozakboy.Help.ErrorMessageException">
+            <summary>
+            自定義錯誤訊息異常類，用於處理和傳遞應用程序中的錯誤訊息
+            </summary>
+        </member>
+        <member name="P:ozakboy.Help.ErrorMessageException.ErrorCode">
+            <summary>
+            錯誤代碼
+            </summary>
+        </member>
+        <member name="P:ozakboy.Help.ErrorMessageException.AdditionalInfo">
+            <summary>
+            額外的錯誤資訊
+            </summary>
+        </member>
+        <member name="M:ozakboy.Help.ErrorMessageException.#ctor">
+            <summary>
+            初始化 ErrorMessageException 的新實例，使用預設錯誤訊息
+            </summary>
+        </member>
+        <member name="M:ozakboy.Help.ErrorMessageException.#ctor(System.String)">
+            <summary>
+            初始化 ErrorMessageException 的新實例，使用指定的錯誤訊息
+            </summary>
+            <param name="message">描述錯誤的訊息</param>
+        </member>
+        <member name="M:ozakboy.Help.ErrorMessageException.#ctor(System.String,System.String)">
+            <summary>
+            初始化 ErrorMessageException 的新實例，使用指定的錯誤訊息和錯誤代碼
+            </summary>
+            <param name="message">描述錯誤的訊息</param>
+            <param name="errorCode">錯誤代碼</param>
+        </member>
+        <member name="M:ozakboy.Help.ErrorMessageException.#ctor(System.String,System.String,System.Object)">
+            <summary>
+            初始化 ErrorMessageException 的新實例，使用指定的錯誤訊息、錯誤代碼和額外資訊
+            </summary>
+            <param name="message">描述錯誤的訊息</param>
+            <param name="errorCode">錯誤代碼</param>
+            <param name="additionalInfo">額外的錯誤相關資訊</param>
+        </member>
+        <member name="M:ozakboy.Help.ErrorMessageException.#ctor(System.String,System.Exception)">
+            <summary>
+            初始化 ErrorMessageException 的新實例，使用指定的錯誤訊息和內部異常
+            </summary>
+            <param name="message">描述錯誤的訊息</param>
+            <param name="innerException">導致當前異常的異常</param>
+        </member>
+        <member name="M:ozakboy.Help.ErrorMessageException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            初始化 ErrorMessageException 的新實例，用於序列化
+            </summary>
+            <param name="info">序列化數據</param>
+            <param name="context">序列化的上下文流</param>
+        </member>
+        <member name="M:ozakboy.Help.ErrorMessageException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            設置序列化數據
+            </summary>
+            <param name="info">序列化數據</param>
+            <param name="context">序列化的上下文流</param>
+        </member>
+        <member name="M:ozakboy.Help.ErrorMessageException.ToString">
+            <summary>
+            獲取異常的詳細字符串表示
+            </summary>
+            <returns>包含異常詳細信息的字符串</returns>
+        </member>
         <member name="M:ozakboy.Help.JsonExtensions.ToJsonString(System.Object)">
             <summary>
             將物件序列化為JSON字符串

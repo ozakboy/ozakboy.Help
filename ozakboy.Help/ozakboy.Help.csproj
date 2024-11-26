@@ -1,33 +1,51 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net6.0;net7.0;netcoreapp3.1;</TargetFrameworks>
-    <Nullable>enable</Nullable>
+    <!-- 基本設定 -->
+    <TargetFrameworks>net6.0;net7.0;netcoreapp3.1</TargetFrameworks>
     <RootNamespace>ozakboy.Help</RootNamespace>
-    <PackageVersion>1.0.8</PackageVersion>
-    <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <AssemblyName>ozakboy.Help</AssemblyName>
+    <LangVersion>latest</LangVersion>
+
+    <!-- 套件設定 -->
+    <PackageId>ozakboy.Help</PackageId>
+    <PackageVersion>1.1.0</PackageVersion>
     <Authors>ozakboy</Authors>
-    <Description>封裝語法，把複雜語法簡單化</Description>
+    <Description>封裝語法，把複雜語法簡單化，提供日期時間處理、列舉擴展、JSON處理和異常處理等實用功能。</Description>
+    <Copyright>Copyright © ozakboy 2024</Copyright>
+
+    <!-- 套件詳細資訊 -->
     <PackageProjectUrl>https://github.com/ozakboy/ozakboy.Help</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/ozakboy/ozakboy.Help</RepositoryUrl>
-    <RepositoryType>github</RepositoryType>
-    <PackAsTool>False</PackAsTool>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <DocumentationFile>file.xml</DocumentationFile>
-    <IsPublishable>False</IsPublishable>
-    <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
-    <AnalysisLevel>6.0-all</AnalysisLevel>
-    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <RepositoryUrl>https://github.com/ozakboy/ozakboy.Help</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageTags>Extensions;Helpers;DateTime;Enum;JSON;Exceptions</PackageTags>
+
+    <!-- 編譯設定 -->
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>file.xml</DocumentationFile>
+
+    <!-- 分析和代碼質量 -->
+    <AnalysisLevel>latest-all</AnalysisLevel>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+
+    <!-- 編譯優化 -->
+    <Optimize>true</Optimize>
+    <DebugType>portable</DebugType>
+    <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <Optimize>True</Optimize>
+  <!-- 發布設定 -->
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <IsPublishable>True</IsPublishable>
   </PropertyGroup>
 
-
+  <!-- 額外檔案 -->
   <ItemGroup>
     <None Include="..\LICENSE">
       <Pack>True</Pack>
